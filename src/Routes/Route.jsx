@@ -8,7 +8,7 @@ import History from '../Components/History'
 import { useDispatch, useSelector } from 'react-redux'
 import { userLoggedin } from '../Store/Actions/UserAction'
 
-const route = () => {
+const Route = () => {
 const dispatch = useDispatch()
 const{isAuthenticated} =useSelector((state=>state?.user))
 useEffect(()=>{
@@ -34,4 +34,4 @@ dispatch(userLoggedin())
   )
 }
 
-export default route
+export default Route
