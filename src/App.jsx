@@ -2,14 +2,14 @@ import { useState } from 'react'
 
 import './App.css'
 import "tailwindcss"
-import Route from './Routes/Route.jsx'
+import Router from './Routes/Router.jsx'
 
 function App() {
  
 
   return (
  <>
-<Route/>
+<Router/>
  </>
   )
 }
