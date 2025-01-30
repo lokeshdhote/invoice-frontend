@@ -4,7 +4,7 @@ import "./index.css";
 import { HashRouter } from "react-router-dom";
 import 'remixicon/fonts/remixicon.css';
 import { Provider } from "react-redux";
-import { Store } from "./Store/Store.jsx";
+import {Store} from "./Store/Store.jsx"
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 

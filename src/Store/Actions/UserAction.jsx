@@ -13,7 +13,7 @@ export const userSignin =  (info) => async (dispatch) => {
         dispatch(Success(data));
         
       } catch (error) {
-        dispatch(setError(error.response.data));
+        dispatch(setError(error?.response.data));
       }
     };
 
@@ -25,7 +25,7 @@ export const userLogin =  (info) => async (dispatch) => {
         dispatch(Success(data));
         
       } catch (error) {
-        dispatch(setError(error.response.data));
+        dispatch(setError(error?.response.data));
       }
     };
 
@@ -39,7 +39,7 @@ export const createinvoice =  (info) => async (dispatch) => {
         dispatch(newinvoice(data));
         
       } catch (error) {
-        dispatch(setError(error.response.data));
+        dispatch(setError(error?.response.data));
       }
     };
 
@@ -51,7 +51,7 @@ export const createinvoice =  (info) => async (dispatch) => {
           dispatch(Success(data));
           
         } catch (error) {
-          dispatch(setError(error.response.data));
+          dispatch(setError(error?.response.data));
         }
       };
   
@@ -63,6 +63,6 @@ export const createinvoice =  (info) => async (dispatch) => {
             dispatch(getallinvoice(data));
             
           } catch (error) {
-            dispatch(setError(error.response?.data));
+            dispatch(setError(error?.response?.data));
           }
         };
